@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <title>OpenFDA project</title>
+      <link rel="icon" href="https://mlstaticquic-a.akamaihd.net/capsulas-de-gelatina-vacias-000-blancas-y-azules-x-100un-D_NQ_NP_670939-MLU29193415348_012019-F.jpg" />
+  </head>
+  <body style = 'background-color:LightBlue'>
+    <center>
+      <h1 style = 'color:DarkBlue'>Bienvenido al buscador de OpenFDA</h1>
+      <h3 style = 'color:DarkBlue'>Con esta aplicación puedes buscar o listar medicamentos, empresas o advertencias de la base de datos de OpenFDA</h3>
+    </center>
+
+    <br>
+    <u style = 'color:DarkBlue'>
+    <h4 style = 'color:DarkBlue'>LISTAR FÁRMACOS O EMPRESAS</h4>
+    </u>
+    <h5 style = 'color:DarkBlue'>Con esta opción puedes obtener un listado de medicamentos o empresas, además puedes elegir el número de elementos de la lista introduciendo un límite.</h5>
+    <h5 style = 'color:Purple'>
+    <form action = "listDrugs" method="get">
+      <input type="submit" value="Listar fármacos">
+        Límite: <input type="text" name="limit" value="1">
+    </form>
+
+    <form action = "listCompanies" method="get">
+      <input type="submit" value="Listar empresas">
+      Límite: <input type="text" name="limit" value="1">
+    </form>
+    </h5>
+
+
+    <br>
+    <u style = 'color:DarkBlue'>
+    <h4 style = 'color:DarkBlue'>BUSCAR FÁRMACOS O EMPRESAS</h4>
+    </u>
+    <h5 style = 'color:DarkBlue'>Con esta opción puedes buscar los medicamentos que contengan el principio activo que has introducido o los medicamentos que pertenecezcan a la empresa introducida.</h5>
+    <h5 style = 'color:Purple'>
+    <form action = "searchDrug" method="get">
+      <input type="submit" value="Buscar fármaco">
+        Principio activo: <input type="text" name="active_ingredient" value="">
+    </form>
+
+    <form action = "searchCompany" method="get">
+      <input type="submit" value="Buscar empresa">
+        Empresa: <input type="text" name="company" value="">
+    </form>
+    </h5>
+    </br>
+
+    <u style = 'color:DarkBlue'>
+    <h4 style = 'color:DarkBlue'>LISTAR ADVERTENCIAS</h4>
+    </u>
+    <h5 style = 'color:DarkBlue'>Con esta opción puedes obtener un listado de advertencias, además puedes elegir el número de advertencias de la lista introduciendo un límite.</h5>
+    <h5 style = 'color:Purple'>
+    <form action = "listWarnings" method="get">
+      <input type="submit" value="Listar advertencias">
+        Límite: <input type="text" name="limit" value="1">
+    </form>
+    </h5>
+
+  </body>
+</html>
