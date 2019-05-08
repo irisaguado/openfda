@@ -306,4 +306,4 @@ except KeyboardInterrupt:
     print("Interrumpido por el usuario")
 
 print("")
-print("Servidor parad")
+print("Servidor parado")
