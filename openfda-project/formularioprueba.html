@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenFDA-project</title>
+</head>
+<body>
+
+<form action = "listDrugs" method="get">
+  <input type="submit" value="Listar fármacos">
+    Límite: <input type="text" name="limit" value="1">
+</form>
+
+<form action = "listCompanies" method="get">
+  <input type="submit" value="Listar empresas">
+  Límite: <input type="text" name="limit" value="1">
+</form>
+
+<form action = "searchDrug" method="get">
+  <input type="submit" value="Buscar fármaco">
+    Principio activo: <input type="text" name="active_ingredient" value="">
+    Límite: <input type="text" name="limit" value="1">
+</form>
+
+<form action = "searchCompany" method="get">
+  <input type="submit" value="Buscar empresas">
+    Empresa: <input type="text" name="company" value="">
+    Límite: <input type="text" name="limit" value="1">
+</form>
+
+<form action = "listWarnings" method="get">
+  <input type="submit" value="Listar advertencias">
+    Límite: <input type="text" name="limit" value="1">
+</form>
+
+</body>
+</html>
