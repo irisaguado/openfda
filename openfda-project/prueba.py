@@ -190,7 +190,7 @@ class TestHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
                 advertencia = resp['warnings'][0]
 
             else:
-                advertencia = "Desconocida"
+                advertencia = "Desconocido"
 
             mensaje += "<li>{}</li>\n".format(advertencia)
 
